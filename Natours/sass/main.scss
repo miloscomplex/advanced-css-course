@@ -1,13 +1,13 @@
-/*
-COLORS:
+$color-primary: #55c57a;
+$color-primary-light:  #7ed56f;
+$color-primary-dark: #28b485;
 
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
+$color-grey-dark: #777;
+$color-white: #fff;
 
-*/
 
-* {
+
+*, *::before, *::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -25,7 +25,7 @@ body {
     font-weight: 400;
     /* font-size: 16px; */
     line-height: 1.7;
-    color: #777;
+    color: $color-grey-dark;
     padding: 3rem;
     box-sizing: border-box;
 }
@@ -34,8 +34,8 @@ body {
     height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
-        rgba(126, 213, 111, 0.801), 
-        rgba(40, 180, 133, 0.808)), 
+        rgba($color-primary-light, 0.80), 
+        rgba($color-primary-dark, 0.808)), 
         url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
@@ -63,7 +63,7 @@ body {
 }
 
 .heading-primary {
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
     /* fix shakiness */
@@ -157,8 +157,8 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.2);
 }
 .btn-white {
-    background-color: #fff;
-    color: #777;
+    background-color: $color-white;
+    color: $color-grey-dark;
 }
 
 /* ::after is child of button */
@@ -176,7 +176,7 @@ body {
 }
 
 .btn-white::after {
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 /* psudeo element only on hover */
