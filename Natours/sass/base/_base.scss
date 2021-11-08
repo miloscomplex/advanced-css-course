@@ -1,3 +1,17 @@
-@import '_animation';
-@import '_typography';
-@import '_utilities';
+*, *::before, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; 
+    /* default is 16px */
+    /* percentage not to override user setting */
+    /* makes 1 rem be 10px */
+}
+
+body {
+    padding: 3rem;
+    box-sizing: border-box;
+}
