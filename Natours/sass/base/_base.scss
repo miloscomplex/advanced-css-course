@@ -9,6 +9,10 @@ html {
     /* default is 16px */
     /* percentage not to override user setting */
     /* makes 1 rem be 10px */
+
+    @include respond-phone {
+        font-size: 50%;
+    }
 }
 
 body {
