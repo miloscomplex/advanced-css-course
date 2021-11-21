@@ -48,9 +48,14 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: $color-primary-light;
+
+    @supports (-webkit-background-clip: text) {
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent
+    }
+
     letter-spacing: 2px;
     transition: all .2s;
 
@@ -83,3 +88,4 @@ body {
         margin-bottom: 3rem;
     }
 }
+
