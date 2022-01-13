@@ -213,7 +213,7 @@
 .overview {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--color-grey-light-2);
+    border-bottom: var(--line);
     justify-content: space-between;
 
     &__heading {
@@ -233,8 +233,7 @@
     &__icon-location {
         width: 1.75rem;
         height: 1.75rem;
-        fill: var(--color-primary)
-
+        fill: var(--color-primary);
     }
 
     &__location {
