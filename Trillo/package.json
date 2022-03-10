@@ -20,5 +20,8 @@
     "node-sass": "*",
     "npm-run-all": "*",
     "postcss-cli": "*"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }
